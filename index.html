@@ -41,8 +41,7 @@
 
   <main>
     <div class="topbar">
-      <div><i></i>Figma como fonte de verdade</div>
-      <div class="theme-switch">
+      <div class="theme-switch" style="margin-left:auto">
         <button data-theme-choice="light">☀ Light</button>
         <button class="active" data-theme-choice="dark">☾ Dark</button>
       </div>
@@ -60,12 +59,12 @@
     </section>
 
     <section id="cores" class="section">
-      <header class="section-heading"><span class="eyebrow">01 / FOUNDATIONS</span><h2>Cores semânticas</h2><p>As aplicações consomem papéis semânticos. Os valores hex ficam restritos ao pacote de tokens.</p></header>
+      <header class="section-heading"><span class="eyebrow">01 / FUNDAMENTOS</span><h2>Cores semânticas</h2><p>As aplicações consomem papéis semânticos. Os valores hex ficam restritos ao pacote de tokens.</p></header>
       <div class="swatch-grid" id="swatches"></div>
     </section>
 
     <section id="tipografia" class="section">
-      <header class="section-heading"><span class="eyebrow">02 / FOUNDATIONS</span><h2>Tipografia</h2><p>Inter favorece leitura rápida, hierarquia operacional e alta densidade de informação.</p></header>
+      <header class="section-heading"><span class="eyebrow">02 / FUNDAMENTOS</span><h2>Tipografia</h2><p>Inter favorece leitura rápida, hierarquia operacional e alta densidade de informação.</p></header>
       <div class="type-specimen">
         <div><span>Display<small>34 / 42 · Bold</small></span><p class="type-display">Evolução em movimento.</p></div>
         <div><span>H1<small>28 / 36 · Bold</small></span><p class="type-h1">Financeiro e assinaturas</p></div>
@@ -76,12 +75,12 @@
     </section>
 
     <section id="espacamento" class="section">
-      <header class="section-heading"><span class="eyebrow">03 / FOUNDATIONS</span><h2>Espaçamento e raio</h2><p>Escala baseada em múltiplos de 4px, com controles dimensionados para uso eficiente.</p></header>
+      <header class="section-heading"><span class="eyebrow">03 / FUNDAMENTOS</span><h2>Espaçamento e raio</h2><p>Escala baseada em múltiplos de 4px, com controles dimensionados para uso eficiente.</p></header>
       <div class="foundation-grid"><div class="spacing-list" id="spacing-list"></div><div class="radius-list" id="radius-list"></div></div>
     </section>
 
     <section id="componentes" class="section">
-      <header class="section-heading"><span class="eyebrow">04 / COMPONENTS</span><h2>Componentes fundamentais</h2><p>Contratos iniciais compartilhados entre o Admin web e os aplicativos mobile.</p></header>
+      <header class="section-heading"><span class="eyebrow">04 / COMPONENTES</span><h2>Componentes fundamentais</h2><p>Contratos iniciais compartilhados entre o Admin web e os aplicativos mobile.</p></header>
       <div class="demo-stack">
         <article class="demo"><header><div><strong>Button</strong><span>primary · secondary · ghost · danger</span></div><code>min-height 44px</code></header><div class="demo-row"><button class="button primary">Salvar alterações</button><button class="button secondary">Exportar CSV</button><button class="button ghost">Cancelar</button><button class="button danger">Bloquear</button><button class="button primary" disabled>Desativado</button></div></article>
         <article class="demo"><header><div><strong>Input</strong><span>default · hint · error</span></div></header><div class="input-grid"><label class="field"><b>Nome do treino</b><input placeholder="Cardio Base"><small>Use um nome fácil de reconhecer.</small></label><label class="field"><b>E-mail</b><input value="aluno@crosscardio.com" readonly></label><label class="field error"><b>Código</b><input value="CC-203" readonly><small>Este código já está em uso.</small></label></div></article>
@@ -91,17 +90,17 @@
     </section>
 
     <section id="estados" class="section">
-      <header class="section-heading"><span class="eyebrow">05 / PATTERNS</span><h2>Estados obrigatórios</h2><p>Toda jornada operacional deve comunicar progresso, ausência de dados, falhas, confirmação e sucesso.</p></header>
+      <header class="section-heading"><span class="eyebrow">05 / PADRÕES</span><h2>Estados obrigatórios</h2><p>Toda jornada operacional deve comunicar progresso, ausência de dados, falhas, confirmação e sucesso.</p></header>
       <div class="state-grid"><article class="info"><b>Loading</b><p>Skeleton preserva a estrutura durante o carregamento.</p></article><article><b>Empty</b><p>Explique o vazio e ofereça uma próxima ação.</p></article><article class="error-state"><b>Error</b><p>Descreva o problema e permita tentar novamente.</p></article><article class="warning-state"><b>Confirm</b><p>Confirme ações destrutivas com contexto curto.</p></article><article class="success-state"><b>Success</b><p>Confirme o resultado e permita desfazer quando aplicável.</p></article></div>
     </section>
 
     <section id="acessibilidade" class="section">
-      <header class="section-heading"><span class="eyebrow">06 / QUALITY</span><h2>Acessibilidade por padrão</h2><p>Os componentes priorizam contraste, foco, semântica e áreas de interação adequadas.</p></header>
+      <header class="section-heading"><span class="eyebrow">06 / QUALIDADE</span><h2>Acessibilidade por padrão</h2><p>Os componentes priorizam contraste, foco, semântica e áreas de interação adequadas.</p></header>
       <div class="check-grid"><div>✓ Contraste mínimo WCAG AA.</div><div>✓ Alvos de 44px web e 48px mobile.</div><div>✓ Estados de foco sempre visíveis.</div><div>✓ Erros possuem mensagem textual.</div><div>✓ Loading e disabled são semânticos.</div><div>✓ Navegação funciona por teclado.</div></div>
     </section>
 
     <section id="integracao" class="section">
-      <header class="section-heading"><span class="eyebrow">07 / IMPLEMENTATION</span><h2>Pacotes e integração</h2><p>Tokens são compartilhados; componentes mantêm implementações separadas para cada plataforma.</p></header>
+      <header class="section-heading"><span class="eyebrow">07 / IMPLEMENTAÇÃO</span><h2>Pacotes e integração</h2><p>Tokens são compartilhados; componentes mantêm implementações separadas para cada plataforma.</p></header>
       <div class="package-table"><div><strong>@crosscardio/tokens</strong><span>Web + Mobile</span><code>Fundamentos e contratos</code></div><div><strong>@crosscardio/ui-web</strong><span>React / DOM</span><code>Admin e Backoffice</code></div><div><strong>@crosscardio/ui-native</strong><span>React Native / Expo</span><code>Apps Aluno e Professor</code></div></div>
       <div class="code"><header><span>TypeScript</span><button id="copy-code" aria-label="Copiar código">Copiar</button></header><pre><code id="code-example">import { Button, Card, CrossCardioProvider } from '@crosscardio/ui-web';
 
