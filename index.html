@@ -10,107 +10,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="platform.css">
 </head>
 <body>
-  <header class="mobile-header">
-    <button class="icon-button" id="menu-open" aria-label="Abrir menu">☰</button>
-    <strong>CROSSCARDIO DS</strong>
-    <button class="icon-button theme-toggle" aria-label="Alternar tema">☀</button>
-  </header>
-
+  <header class="mobile-header"><button class="icon-button" id="menu-open" aria-label="Abrir menu">☰</button><strong>CROSSCARDIO DS</strong><button class="icon-button theme-toggle" aria-label="Alternar tema">☀</button></header>
   <aside class="sidebar" id="sidebar">
-    <div class="brand">
-      <div class="brand-mark">CC</div>
-      <div><strong>CROSSCARDIO</strong><span>Design System</span></div>
-      <button class="icon-button sidebar-close" id="menu-close" aria-label="Fechar menu">×</button>
-    </div>
+    <div class="brand"><div class="brand-mark">CC</div><div><strong>CROSSCARDIO</strong><span>Design System</span></div><button class="icon-button sidebar-close" id="menu-close" aria-label="Fechar menu">×</button></div>
     <label class="search"><span>⌕</span><input id="nav-search" placeholder="Buscar seção" aria-label="Buscar seção"></label>
-    <nav id="navigation">
-      <a href="#inicio">Introdução <span>›</span></a>
-      <a href="#cores">Cores <span>›</span></a>
-      <a href="#tipografia">Tipografia <span>›</span></a>
-      <a href="#espacamento">Espaçamento e raio <span>›</span></a>
-      <a href="#componentes">Componentes <span>›</span></a>
-      <a href="#estados">Estados <span>›</span></a>
-      <a href="#acessibilidade">Acessibilidade <span>›</span></a>
-      <a href="#integracao">Integração <span>›</span></a>
-    </nav>
+    <nav id="navigation"><a href="#inicio">Introdução <span>›</span></a><a href="#cores">Cores <span>›</span></a><a href="#tipografia">Tipografia <span>›</span></a><a href="#espacamento">Espaçamento e raio <span>›</span></a><a href="#componentes">Componentes <span>›</span></a><a href="#estados">Estados <span>›</span></a><a href="#acessibilidade">Acessibilidade <span>›</span></a><a href="#integracao">Integração <span>›</span></a></nav>
     <div class="sidebar-footer"><span>Documentação pública</span><strong>v0.1.0</strong></div>
   </aside>
   <button class="backdrop" id="backdrop" aria-label="Fechar menu"></button>
-
   <main>
-    <div class="topbar">
-      <div class="theme-switch" style="margin-left:auto">
-        <button data-theme-choice="light">☀ Light</button>
-        <button class="active" data-theme-choice="dark">☾ Dark</button>
-      </div>
-    </div>
-
-    <section id="inicio" class="section hero-section">
-      <span class="eyebrow">CROSSCARDIO DESIGN SYSTEM</span>
-      <h1>Uma linguagem visual,<br>duas plataformas.</h1>
-      <p class="lead">Tokens compartilhados entre web e mobile, componentes nativos para cada ambiente e paridade total entre os temas Dark e Light.</p>
-      <div class="principles">
-        <article><b>01</b><div><strong>Tokens compartilhados</strong><p>Cores, tipografia, espaçamento, raios e sombras em um único contrato.</p></div></article>
-        <article><b>02</b><div><strong>APIs consistentes</strong><p>Mesmos nomes de props e variantes em React e React Native.</p></div></article>
-        <article><b>03</b><div><strong>Fidelidade ao Figma</strong><p>O código acompanha o padrão visual aprovado, nunca o substitui.</p></div></article>
-      </div>
-    </section>
-
-    <section id="cores" class="section">
-      <header class="section-heading"><span class="eyebrow">01 / FUNDAMENTOS</span><h2>Cores semânticas</h2><p>As aplicações consomem papéis semânticos. Os valores hex ficam restritos ao pacote de tokens.</p></header>
-      <div class="swatch-grid" id="swatches"></div>
-    </section>
-
-    <section id="tipografia" class="section">
-      <header class="section-heading"><span class="eyebrow">02 / FUNDAMENTOS</span><h2>Tipografia</h2><p>Inter favorece leitura rápida, hierarquia operacional e alta densidade de informação.</p></header>
-      <div class="type-specimen">
-        <div><span>Display<small>34 / 42 · Bold</small></span><p class="type-display">Evolução em movimento.</p></div>
-        <div><span>H1<small>28 / 36 · Bold</small></span><p class="type-h1">Financeiro e assinaturas</p></div>
-        <div><span>H2<small>20 / 28 · Bold</small></span><p class="type-h2">Próximas aulas</p></div>
-        <div><span>Body<small>15 / 22 · Regular</small></span><p class="type-body">CrossCardio aproxima pessoas, treino e evolução.</p></div>
-        <div><span>Caption Strong<small>12 / 16 · Semi Bold</small></span><p class="type-caption">STATUS DA ASSINATURA</p></div>
-      </div>
-    </section>
-
-    <section id="espacamento" class="section">
-      <header class="section-heading"><span class="eyebrow">03 / FUNDAMENTOS</span><h2>Espaçamento e raio</h2><p>Escala baseada em múltiplos de 4px, com controles dimensionados para uso eficiente.</p></header>
-      <div class="foundation-grid"><div class="spacing-list" id="spacing-list"></div><div class="radius-list" id="radius-list"></div></div>
-    </section>
-
+    <div class="topbar"><div class="theme-switch" style="margin-left:auto"><button data-theme-choice="light">☀ Light</button><button class="active" data-theme-choice="dark">☾ Dark</button></div></div>
+    <section id="inicio" class="section hero-section"><span class="eyebrow">CROSSCARDIO DESIGN SYSTEM</span><h1>Uma linguagem visual,<br>duas plataformas.</h1><p class="lead">Tokens compartilhados entre web e mobile, componentes nativos para cada ambiente e paridade total entre os temas Dark e Light.</p><div class="principles"><article><b>01</b><div><strong>Tokens compartilhados</strong><p>Cores, tipografia, espaçamento, raios e sombras em um único contrato.</p></div></article><article><b>02</b><div><strong>APIs consistentes</strong><p>Mesmos nomes de props e variantes em React e React Native.</p></div></article><article><b>03</b><div><strong>Fidelidade ao Figma</strong><p>O código acompanha o padrão visual aprovado, nunca o substitui.</p></div></article></div></section>
+    <section id="cores" class="section"><header class="section-heading"><span class="eyebrow">01 / FUNDAMENTOS</span><h2>Cores semânticas</h2><p>As aplicações consomem papéis semânticos. Os valores hex ficam restritos ao pacote de tokens.</p></header><div class="swatch-grid" id="swatches"></div></section>
+    <section id="tipografia" class="section"><header class="section-heading"><span class="eyebrow">02 / FUNDAMENTOS</span><h2>Tipografia</h2><p>Inter favorece leitura rápida, hierarquia operacional e alta densidade de informação.</p></header><div class="type-specimen"><div><span>Display<small>34 / 42 · Bold</small></span><p class="type-display">Evolução em movimento.</p></div><div><span>H1<small>28 / 36 · Bold</small></span><p class="type-h1">Financeiro e assinaturas</p></div><div><span>H2<small>20 / 28 · Bold</small></span><p class="type-h2">Próximas aulas</p></div><div><span>Body<small>15 / 22 · Regular</small></span><p class="type-body">CrossCardio aproxima pessoas, treino e evolução.</p></div><div><span>Caption Strong<small>12 / 16 · Semi Bold</small></span><p class="type-caption">STATUS DA ASSINATURA</p></div></div></section>
+    <section id="espacamento" class="section"><header class="section-heading"><span class="eyebrow">03 / FUNDAMENTOS</span><h2>Espaçamento e raio</h2><p>Escala baseada em múltiplos de 4px, com controles dimensionados para uso eficiente.</p></header><div class="foundation-grid"><div class="spacing-list" id="spacing-list"></div><div class="radius-list" id="radius-list"></div></div></section>
     <section id="componentes" class="section">
-      <header class="section-heading"><span class="eyebrow">04 / COMPONENTES</span><h2>Componentes fundamentais</h2><p>Contratos iniciais compartilhados entre o Admin web e os aplicativos mobile.</p></header>
+      <header class="section-heading"><span class="eyebrow">04 / COMPONENTES</span><h2>Componentes fundamentais</h2><p>Contratos compartilhados com implementações nativas para cada plataforma.</p></header>
       <div class="demo-stack">
         <article class="demo"><header><div><strong>Button</strong><span>primary · secondary · ghost · danger</span></div><code>min-height 44px</code></header><div class="demo-row"><button class="button primary">Salvar alterações</button><button class="button secondary">Exportar CSV</button><button class="button ghost">Cancelar</button><button class="button danger">Bloquear</button><button class="button primary" disabled>Desativado</button></div></article>
         <article class="demo"><header><div><strong>Input</strong><span>default · hint · error</span></div></header><div class="input-grid"><label class="field"><b>Nome do treino</b><input placeholder="Cardio Base"><small>Use um nome fácil de reconhecer.</small></label><label class="field"><b>E-mail</b><input value="aluno@crosscardio.com" readonly></label><label class="field error"><b>Código</b><input value="CC-203" readonly><small>Este código já está em uso.</small></label></div></article>
         <article class="demo"><header><div><strong>Cards e métricas</strong><span>base · elevated</span></div></header><div class="card-grid"><div class="card metric"><small>MRR ATIVO</small><strong>R$ 72.480</strong><span>+8,4% no mês</span></div><div class="card"><small>PRÓXIMA AULA</small><h3>Cardio Base</h3><p>Hoje, 19:30 · 18 participantes</p><button class="button secondary small">Ver reservas</button></div></div></article>
         <article class="demo"><header><div><strong>Avatar e status</strong><span>sm · md · lg</span></div></header><div class="demo-row align-center"><span class="avatar sm">MC</span><span class="avatar">RL</span><span class="avatar lg">BR</span><span class="badge success">Ativo</span><span class="badge warning">Trial</span><span class="badge error-badge">Falha</span></div></article>
       </div>
+      <div class="platform-docs">
+        <div class="platform-heading"><div><strong>Exemplo por plataforma</strong><span>A API visual é equivalente; apenas as primitivas de renderização mudam.</span></div><div class="platform-tabs" role="tablist" aria-label="Plataforma"><button class="active" role="tab" data-platform="web">Web</button><button role="tab" data-platform="mobile">Mobile</button></div></div>
+        <div class="platform-grid">
+          <div class="platform-preview" id="platform-preview">
+            <div class="browser-frame platform-panel" data-platform-panel="web"><div class="browser-bar"><i></i><i></i><i></i><span>Admin / Novo treino</span></div><div class="preview-content"><small>NOVO TREINO</small><h3>Cardio Base</h3><label class="field"><b>Nome</b><input value="Cardio Base" readonly></label><button class="button primary">Salvar treino</button></div></div>
+            <div class="phone-frame platform-panel" data-platform-panel="mobile" hidden><div class="phone-speaker"></div><div class="phone-content"><small>NOVO TREINO</small><h3>Cardio Base</h3><label class="field"><b>Nome</b><input value="Cardio Base" readonly></label><button class="button primary">Salvar treino</button></div></div>
+          </div>
+          <div class="code platform-code"><header><span id="platform-code-label">React / Web</span><button id="copy-platform-code" aria-label="Copiar código">Copiar</button></header><pre><code id="platform-code"></code></pre></div>
+        </div>
+      </div>
     </section>
+    <section id="estados" class="section"><header class="section-heading"><span class="eyebrow">05 / PADRÕES</span><h2>Estados obrigatórios</h2><p>Toda jornada operacional deve comunicar progresso, ausência de dados, falhas, confirmação e sucesso.</p></header><div class="state-grid"><article class="info"><b>Loading</b><p>Skeleton preserva a estrutura durante o carregamento.</p></article><article><b>Empty</b><p>Explique o vazio e ofereça uma próxima ação.</p></article><article class="error-state"><b>Error</b><p>Descreva o problema e permita tentar novamente.</p></article><article class="warning-state"><b>Confirm</b><p>Confirme ações destrutivas com contexto curto.</p></article><article class="success-state"><b>Success</b><p>Confirme o resultado e permita desfazer quando aplicável.</p></article></div></section>
+    <section id="acessibilidade" class="section"><header class="section-heading"><span class="eyebrow">06 / QUALIDADE</span><h2>Acessibilidade por padrão</h2><p>Os componentes priorizam contraste, foco, semântica e áreas de interação adequadas.</p></header><div class="check-grid"><div>✓ Contraste mínimo WCAG AA.</div><div>✓ Alvos de 44px web e 48px mobile.</div><div>✓ Estados de foco sempre visíveis.</div><div>✓ Erros possuem mensagem textual.</div><div>✓ Loading e disabled são semânticos.</div><div>✓ Navegação funciona por teclado.</div></div></section>
+    <section id="integracao" class="section"><header class="section-heading"><span class="eyebrow">07 / IMPLEMENTAÇÃO</span><h2>Pacotes e integração</h2><p>Tokens são compartilhados; componentes mantêm implementações separadas para cada plataforma.</p></header><div class="package-table"><div><strong>@crosscardio/tokens</strong><span>Web + Mobile</span><code>Fundamentos e contratos</code></div><div><strong>@crosscardio/ui-web</strong><span>React / DOM</span><code>Admin e Backoffice</code></div><div><strong>@crosscardio/ui-native</strong><span>React Native / Expo</span><code>Apps Aluno e Professor</code></div></div><div class="code"><header><span>TypeScript</span><button id="copy-code" aria-label="Copiar código">Copiar</button></header><pre><code id="code-example">import { themes, spacing } from '@crosscardio/tokens';
 
-    <section id="estados" class="section">
-      <header class="section-heading"><span class="eyebrow">05 / PADRÕES</span><h2>Estados obrigatórios</h2><p>Toda jornada operacional deve comunicar progresso, ausência de dados, falhas, confirmação e sucesso.</p></header>
-      <div class="state-grid"><article class="info"><b>Loading</b><p>Skeleton preserva a estrutura durante o carregamento.</p></article><article><b>Empty</b><p>Explique o vazio e ofereça uma próxima ação.</p></article><article class="error-state"><b>Error</b><p>Descreva o problema e permita tentar novamente.</p></article><article class="warning-state"><b>Confirm</b><p>Confirme ações destrutivas com contexto curto.</p></article><article class="success-state"><b>Success</b><p>Confirme o resultado e permita desfazer quando aplicável.</p></article></div>
-    </section>
-
-    <section id="acessibilidade" class="section">
-      <header class="section-heading"><span class="eyebrow">06 / QUALIDADE</span><h2>Acessibilidade por padrão</h2><p>Os componentes priorizam contraste, foco, semântica e áreas de interação adequadas.</p></header>
-      <div class="check-grid"><div>✓ Contraste mínimo WCAG AA.</div><div>✓ Alvos de 44px web e 48px mobile.</div><div>✓ Estados de foco sempre visíveis.</div><div>✓ Erros possuem mensagem textual.</div><div>✓ Loading e disabled são semânticos.</div><div>✓ Navegação funciona por teclado.</div></div>
-    </section>
-
-    <section id="integracao" class="section">
-      <header class="section-heading"><span class="eyebrow">07 / IMPLEMENTAÇÃO</span><h2>Pacotes e integração</h2><p>Tokens são compartilhados; componentes mantêm implementações separadas para cada plataforma.</p></header>
-      <div class="package-table"><div><strong>@crosscardio/tokens</strong><span>Web + Mobile</span><code>Fundamentos e contratos</code></div><div><strong>@crosscardio/ui-web</strong><span>React / DOM</span><code>Admin e Backoffice</code></div><div><strong>@crosscardio/ui-native</strong><span>React Native / Expo</span><code>Apps Aluno e Professor</code></div></div>
-      <div class="code"><header><span>TypeScript</span><button id="copy-code" aria-label="Copiar código">Copiar</button></header><pre><code id="code-example">import { Button, Card, CrossCardioProvider } from '@crosscardio/ui-web';
-
-&lt;CrossCardioProvider theme="dark"&gt;
-  &lt;Card elevated&gt;
-    &lt;Button variant="primary"&gt;Salvar treino&lt;/Button&gt;
-  &lt;/Card&gt;
-&lt;/CrossCardioProvider&gt;</code></pre></div>
-    </section>
-
+const background = themes.dark.background.app;
+const padding = spacing[6];</code></pre></div></section>
     <footer><strong>CROSSCARDIO DESIGN SYSTEM</strong><span>Figma → Tokens → Componentes → Produtos</span></footer>
   </main>
   <script src="app.js"></script>
